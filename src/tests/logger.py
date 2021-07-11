@@ -1,7 +1,7 @@
 class Logger:
     @staticmethod
     def err(message):
-        print("[!] " + message)
+        print( Logger.get_err(message) )
     
     @staticmethod
     def success(message):
@@ -14,3 +14,7 @@ class Logger:
     @staticmethod
     def warn(message):
         print(f"[#] {message}")
+    
+    @staticmethod
+    def get_err(message):
+        return  "[!] " + message
